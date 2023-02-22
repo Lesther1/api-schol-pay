@@ -1,7 +1,7 @@
 # CRUD API PAY SCHOOL
 This project is a REST API that allows you to perform CRUD (Create, Read, Update and Delete) operations on a school's payment database. The API is designed to receive HTTP requests and send responses in JSON format.
 
-#### API documentation link: 
+#### API documentation link: https://school-finish.onrender.com/api-doc/
 
 #### API link:
 https://school-finish.onrender.com/api/1.0/pagosroute
