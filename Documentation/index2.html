@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="stlye.css">
+</head>
+<body>
+
+  <div>
+    <details open>
+      <summary>
+        Funcionalidad de la Api:
+      </summary>
+      <div>
+        La API de pagos de colegio permite a los usuarios realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en una base de datos de pagos.
+        <details>
+        <summary>modelos de datos a ingresar</summary>
+        <div>
+          <li>Recibo: Numero de recibo generado para el pago</li>
+        <li>Fecha: Fecha de realizacion del pago</li>
+        <li>Nombre: Nombre completo del estudiante</li>
+        <li>Concepto:  Descripción del concepto por el cual se realizó el pago (por ejemplo, matrícula, mensualidad, libros, etc.).
+        </li>
+        <li>Valor: Monto del pago que realizo</li>
+        <li>Fecha de ingreso: Fecha y hora en que se ingresó el pago en la base de datos. Automatica No se ingresa pero se puede obtener</li>
+        <li>Fecha de actualizacion: Fecha y hora en que se actulizo el pago en la base de datos. Automatica No se ingresa pero se puede obtener</li>
+        </div>
+        </details>
+        <details>
+          <summary>Operaciones de la api:</summary>
+          <div>
+            <li>Crear un nuevo registro de pagos</li>
+        <li>Leer todos los registro de pagos existentes</li>
+        <li>Leer un registro de pagos existente</li>
+        <li>Actualizar un registro de pagos existente</li>
+        <li>Eliminar un registro de pago existente</li>
+        <P>Cada operación de la API requiere que el usuario proporcione información específica de la solicitud, como el identificador del pago o los datos del pago para crear o actualizar un registro. La API también devuelve información de respuesta detallada, incluyendo códigos de estado HTTP, mensajes de error y datos del pago.
+        </P>
+          </div>
+        </details>
+      </div>
+    </details>
+    <details>
+      <summary>
+        Estructura de Carpetas:
+      </summary>
+      <div>
+        <ul>App:
+          <li class="carpeta">Controllers: contiene las rutas de los Endopoint en un archivo llamado pagoscontrollers.js</li>
+          <li class="carpeta">Helpers: contiene una funcion para errores en un archivo llamado handleError.js</li>
+          <li class="carpeta">Models: contiene el modelo de la peticion a la base de datos en un archivo llamado pagos.js</li>
+          <li class="carpeta">Routes: contiene dos archivos index.js que permite reciber todos los archivos de rutas y pagosroute.js que son las rutas de los endpoint</li>
+        </ul>
+        <ul>Config:
+          <li class="carpeta">contiene la conexion a mongo con el archivo mongo.js</li>
+        </ul>
+        <li class="carpeta">.env.example: contiene el ejemplo de las variables de entorno</li>
+        <li class="carpeta">app.js: contiene el archivo principal de la conexion</li>
+      </div>
+    </details>
+    <details>
+      <summary>
+        Como se podria implementar JWT
+      </summary>
+      <div>
+        JWT (JSON Web Tokens) es un método popular para la autenticación y la autorización en aplicaciones web y APIs. para implementarlo en esta api deberias crear un nuevo modelo donde permitas el ingreso de usuarios y que dividas los permisos de la siguiente manera</p>
+        <li>Administrador: Puede hacer todas las peticiones a la base de datos</li>
+        <li>Estudiante: solo puede consultar un dato especifica </li>
+      </div>
+    </details>
+    <details>
+      <summary>
+        Endopoint
+      </summary>
+      <div>
+        <p>Se creo una documentacion en swagger para la prueba de todos las peticiones de la api<br><a href="https://school-finish.onrender.com/api-doc">Probar</a></p>
+      </div>
+    </details>
+  </div>
+
+</body>
+</html>
