@@ -5,6 +5,8 @@ This project is a REST API that allows you to perform CRUD (Create, Read, Update
 
 #### API link:
 https://school-finish.onrender.com/api/1.0/pagosroute
+#### Documentacion:
+https://lesther1.github.io/documentation/
 #### Backlog link:
 https://trello.com/invite/b/M4d5W9dw/ATTI0850ce320525e0f8572b875b8b8a6a51298C0360/api-rest
 #### Tegnologies used:
